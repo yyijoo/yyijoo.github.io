@@ -1,3 +1,6 @@
-import React from "react"
+import React, { Fragment } from "react"
+import Header from "../header.js"
 
-export default () => <div>Hello world!</div>
+export default () => (
+  <Header>Hello world! Jooyeon's blog is under construction!</Header>
+)
