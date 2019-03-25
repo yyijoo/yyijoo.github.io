@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[1],{141:function(n,e,a){"use strict";a.r(e);var t=a(0),c=a.n(t),o=a(142),l=a.n(o),r=function(){return c.a.createElement("div",null,c.a.createElement("img",{src:l.a}))};e.default=function(){return c.a.createElement("div",null,c.a.createElement(r,null),"Hello world! Jooyeon's blog is under construction! hahahah.gdsagdsa")}},142:function(n,e,a){n.exports=a.p+"static/logo-7c537a712c4cd873a25579bf76c4abad.png"}}]);
+//# sourceMappingURL=component---src-pages-index-js-4e420bea7ae60cddb39c.js.map
