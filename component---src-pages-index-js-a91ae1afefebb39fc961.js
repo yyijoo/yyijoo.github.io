@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[1],{140:function(n,o,e){"use strict";e.r(o);var t=e(0),r=e.n(t);o.default=function(){return r.a.createElement("div",null,"Hello world! Jooyeon's blog is under construction!")}}}]);
+//# sourceMappingURL=component---src-pages-index-js-a91ae1afefebb39fc961.js.map
