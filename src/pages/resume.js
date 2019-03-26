@@ -30,8 +30,14 @@ const Row = styled.div`
     }
 
     .item {
-      margin-bottom: 1rem;
+      margin-top: 0.5rem;
+      margin-bottom: 1.5rem;
     }
+  }
+
+  .smaller-text {
+    font-size: 0.8rem;
+    font-weight: normal;
   }
 `
 
@@ -51,9 +57,9 @@ export default () => (
         </div>
       </Row>
       <Row>
-        <div className="left-category">{resumeData[0].category}</div>
+        <div className="left-category">{resumeData.techSkill.category}</div>
         <div className="right-items">
-          {resumeData[0].contents.map(content => (
+          {resumeData.techSkill.contents.map(content => (
             <div>
               <div className="item-name">{content.itemName}</div>
               <div className="item">
@@ -63,6 +69,62 @@ export default () => (
               </div>
             </div>
           ))}
+        </div>
+      </Row>
+      <Row>
+        <div className="left-category">{resumeData.projects.category}</div>
+        <div className="right-items">
+          {resumeData.projects.contents.map(content => (
+            <div>
+              <div className="item-name project">
+                {content.project}, [{content.role}]{" "}
+                <span className="smaller-text">{content.term}</span>
+                <div className="smaller-text" style={{ marginTop: "2px" }}>
+                  {content.desc}
+                </div>
+              </div>
+              <div className="item project">
+                {content.item.map(item => (
+                  <div>- {item}</div>
+                ))}
+              </div>
+            </div>
+          ))}
+        </div>
+      </Row>
+      <Row>
+        <div className="left-category">{resumeData.experience.category}</div>
+        <div className="right-items">
+          <div className="item">
+            {resumeData.experience.contents.map(content => (
+              <div style={{ marginBottom: "25px" }}>
+                <div style={{ marginBottom: "15px" }}>
+                  <u>
+                    {content.experience}
+                    <span className="smaller-text"> ({content.term})</span>
+                  </u>
+                </div>
+                <div>
+                  {content.item.map(item => (
+                    <div>- {item}</div>
+                  ))}
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </Row>
+      <Row>
+        <div className="left-category">{resumeData.education.category}</div>
+        <div className="right-items">
+          <div className="item">
+            {resumeData.education.contents.map(content => (
+              <div>
+                - {content.education}
+                <span className="smaller-text"> ({content.term})</span>
+              </div>
+            ))}
+          </div>
         </div>
       </Row>
     </Wrapper>
