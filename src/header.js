@@ -16,7 +16,8 @@ const HeaderDiv = styled.div`
   .link {
     margin-left: 2rem;
     text-decoration: none;
-    color: #666666;
+    color: black;
+    font-size: 1rem;
   }
 
   .logo-img {
